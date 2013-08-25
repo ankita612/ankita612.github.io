@@ -11,3 +11,15 @@ title: My Test Website
 <p>To print off the 15 slowest examples, you could use:</p>
 <div class='bogus-wrapper'><notextile><div class='code-wrap'><figure class='code'><div class='highlight'><table><tr><td class='code'><pre><code class=''><span class='line'>rspec --profile 15</span></code></pre></td></tr></table></div></figure></div></notextile></div>
 <h3 id='_and__declarations_can_use_'><code>let</code> and <code>subject</code> declarations can use <code>super</code></h3>
+
+
+<p>Users have requested this for a while. This allows to override a <code>let</code> or <code>subject</code> declaration in a nested group while delegating to the original definition from the parent group. Just use <code>super()</code>:</p>
+<div class='bogus-wrapper'><notextile><div class='code-wrap'><figure class='code'><figcaption><span>array_spec.rb </span></figcaption>
+ <div class='highlight'><table><tr><td class='code'><pre><code class='rb'><span class='line'><span class='n'>describe</span> <span class='nb'>Array</span> <span class='k'>do</span>
+</span><span class='line'>  <span class='n'>let</span><span class='p'>(</span><span class='ss'>:numbers</span><span class='p'>)</span> <span class='p'>{</span> <span class='o'>[</span><span class='mi'>1</span><span class='p'>,</span> <span class='mi'>2</span><span class='p'>,</span> <span class='mi'>3</span><span class='p'>,</span> <span class='mi'>4</span><span class='o'>]</span> <span class='p'>}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class='n'>context</span> <span class='s2'>&quot;when evens are filtered out&quot;</span> <span class='k'>do</span>
+</span><span class='line'>    <span class='n'>let</span><span class='p'>(</span><span class='ss'>:numbers</span><span class='p'>)</span> <span class='p'>{</span> <span class='k'>super</span><span class='p'>()</span><span class='o'>.</span><span class='n'>reject</span><span class='p'>(</span><span class='o'>&amp;</span><span class='ss'>:even?</span><span class='p'>)</span> <span class='p'>}</span>
+</span><span class='line'>  <span class='k'>end</span>
+</span><span class='line'><span class='k'>end</span>
+</span></code></pre></td></tr></table></div></figure></div></notextile></div>
