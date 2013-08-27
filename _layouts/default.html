@@ -1,68 +1,107 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>My site</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <!--[if lt IE 9]>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>My site</title>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<script src="javascripts/scale.fix.js"></script>
+<meta name="viewport"
+content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-  </head>
-  <body>
-	<div class="wrapper">
-		<header>
-			<ul class="nav nav-pills pull-right">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<br/>
-			<h1>My site</h1>
-			<p>Test Site</p>
-			<br/>
-			<!-- TO ADD SWF
-			<object width="728" height="90">
-			<param name="movie" value="Ankita.swf">
-			<embed src="http://d1ty3l1h3vtwy2.cloudfront.net/7fa3a230-0890-11e3-8a4e-092d5945277d.swf" width="728" height="90">
-			</embed>
-			</object> -->
-		</header>       
-		<section>
-			<p>Welcome to my site..</p>
-			
-			<p> Just testing how the page appears. </p>
-			<p class="alert">Your alert text goes here!</p>
-			<span class="drop_cap">T</span>his is my paragraph. The "T" is my drop cap.
-
-
-			<p>To print off the 15 slowest examples, you could use:</p>
-			<div class='bogus-wrapper'><notextile><div class='code-wrap'><figure class='code'><div class='highlight'><table><tr><td class='code'><pre><code class=''><span class='line'>rspec --profile 15</span></code></pre></td></tr></table></div></figure></div></notextile></div>
-			<h3 id='_and__declarations_can_use_'><code>let</code> and <code>subject</code> declarations can use <code>super</code></h3>
-
-
-			<p>Users have requested this for a while. This allows to override a <code>let</code> or <code>subject</code> declaration in a nested group while delegating to the original definition from the parent group. Just use <code>super()</code>:</p>
-			<div class='bogus-wrapper'><notextile><div class='code-wrap'><figure class='code'><figcaption><span>array_spec.rb </span></figcaption>
-			<div class='highlight'><table><tr><td class='code'><pre><code class='rb'><span class='line'><span class='n'>describe</span> <span class='nb'>Array</span> <span class='k'>do</span>
-			</span><span class='line'>  <span class='n'>let</span><span class='p'>(</span><span class='ss'>:numbers</span><span class='p'>)</span> <span class='p'>{</span> <span class='o'>[</span><span class='mi'>1</span><span class='p'>,</span> <span class='mi'>2</span><span class='p'>,</span> <span class='mi'>3</span><span class='p'>,</span> <span class='mi'>4</span><span class='o'>]</span> <span class='p'>}</span>
-			</span><span class='line'>
-			</span><span class='line'>  <span class='n'>context</span> <span class='s2'>&quot;when evens are filtered out&quot;</span> <span class='k'>do</span>
-			</span><span class='line'>    <span class='n'>let</span><span class='p'>(</span><span class='ss'>:numbers</span><span class='p'>)</span> <span class='p'>{</span> <span class='k'>super</span><span class='p'>()</span><span class='o'>.</span><span class='n'>reject</span><span class='p'>(</span><span class='o'>&amp;</span><span class='ss'>:even?</span><span class='p'>)</span> <span class='p'>}</span>
-			</span><span class='line'>  <span class='k'>end</span>
-			</span><span class='line'><span class='k'>end</span>
-			</span></code></pre></td></tr></table></div></figure></div></notextile></div>
-		</section>
-		</div>
-	</div>
-    <footer>
-      <p>Hosted by Bug Herder</p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+</head>
+<body>
+<div class="wrapper"> <header> </header>
+<ul class="nav nav-pills pull-right">
+<li class="active"><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+<br>
+<h1>My site</h1>
+<p>Test Site</p>
+<br>
+I would like to tell you!<!-- TO ADD SWF
+<object width="728" height="90">
+<param name="movie" value="Ankita.swf">
+<embed src="http://d1ty3l1h3vtwy2.cloudfront.net/7fa3a230-0890-11e3-8a4e-092d5945277d.swf" width="728" height="90">
+</embed>
+</object> -->
+<section> </section>
+<p>Welcome to my site..</p>
+<p> Just testing how the page appears. </p>
+<div class="bogus-wrapper"><notextile></notextile>
+<div class="code-wrap"><figure class="code"> </figure>
+<div class="highlight">
+<table>
+<tbody>
+<tr>
+<td class="code">
+<pre><code class=""><span class="line">rspec --profile 15</span></code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="_and__declarations_can_use_"><code>let</code> and <code>subject</code>
+declarations can use <code>super</code></h3>
+<p>Users have requested this for a while. This allows to override a <code>let</code>
+or <code>subject</code> declaration in a nested group while delegating
+to the original definition from the parent group. Just use <code>super()</code>:</p>
+<div class="bogus-wrapper"><notextile></notextile>
+<div class="code-wrap"><figure class="code"><figcaption><span>array_spec.rb
+</span></figcaption> </figure>
+<div class="highlight">
+<table>
+<tbody>
+<tr>
+<td class="code">
+<pre><code class="rb"><span class="line"><span class="n">describe</span> <span
+class="nb">Array</span> <span class="k">do</span><br> </span><span
+class="line"> <span class="n">let</span><span class="p">(</span><span
+class="ss">:numbers</span><span class="p">)</span> <span class="p">{</span> <span
+class="o">[</span><span class="mi">1</span><span class="p">,</span> <span
+class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span
+class="p">,</span> <span class="mi">4</span><span class="o">]</span> <span
+class="p">}</span><br> </span><span class="line"><br> </span><span
+class="line"> <span class="n">context</span> <span class="s2">"when evens are filtered out"</span> <span
+class="k">do</span><br> </span><span class="line"> <span class="n">let</span><span
+class="p">(</span><span class="ss">:numbers</span><span class="p">)</span> <span
+class="p">{</span> <span class="k">super</span><span class="p">()</span><span
+class="o">.</span><span class="n">reject</span><span class="p">(</span><span
+class="o">&amp;</span><span class="ss">:even?</span><span class="p">)</span> <span
+class="p">}</span><br> </span><span class="line"> <span class="k">end</span><br> </span><span
+class="line"><span class="k">end</span><br> </span></code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<footer> </footer>
+<div class="code-wrap"><figure class="code"><figcaption><span><br>
+new number </span></figcaption> </figure>
+<div class="highlight">
+<table>
+<tbody>
+<tr>
+<td class="code">
+<pre><code class="rb"><span class="line"><span class="n">describe 'test' do<br> $b.test.wait_until_present<br>end</span></span><span
+class="line"> </span></code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Hosted by Bug Herder</p>
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+</body>
 </html>
+
