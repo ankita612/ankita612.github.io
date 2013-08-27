@@ -36,13 +36,24 @@
 		<section>
 			<p>Welcome to my site..</p>
 			
-			<p> Just testing how the page appears. </p>
-			<p class="alert">Your alert text goes here!</p>
-			<span class="drop_cap">T</span>his is my paragraph. The "T" is my drop cap.
-
-
-			<p>To print off the 15 slowest examples, you could use:</p>
-			<div class='bogus-wrapper'><notextile><div class='code-wrap'><figure class='code'><div class='highlight'><table><tr><td class='code'><pre><code class=''><span class='line'>rspec --profile 15</span></code></pre></td></tr></table></div></figure></div></notextile></div>
+			<p> Just sharing some information regarding the watir/Rspec tips. </p>
+			
+			<p> First tip is about the Login form:</p>
+			<p> You could use a class in the helper like this </p>
+			
+			<div class='bogus-wrapper'><notextile><div class='code-wrap'><figure class='code'><figcaption><span>helper.rb</span></figcaption>
+				<div class='highlight'>
+					<table>
+						<tbody>
+							<tr>
+								<td class="code">
+									<pre><code class=""><span class="line">class Login<br> def Login.username<br> $b.element(:css, "div.controls &gt; input[name='username']")<br> end<br> def Login.password<br> $b.element(:css, "div.controls &gt; input[name='password']")<br> end<br> def Login.login<br> $b.element :css, "div.span3 &gt; button"<br> end<br>end<br></span></code></pre>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 			<h3 id='_and__declarations_can_use_'><code>let</code> and <code>subject</code> declarations can use <code>super</code></h3>
 
 
